@@ -122,7 +122,7 @@ final class PokedexInfoView: UIView {
 
 extension PokedexInfoView: PokedexInfoProtocol {}
 
-extension PokedexInfoView: ViewCodeProtocol {
+extension PokedexInfoView: MinimumViewMethodsProtocol {
 
     func setupHierarchy() {
         nameStackView.addArrangedSubview(idLabel)

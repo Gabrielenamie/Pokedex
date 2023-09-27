@@ -129,7 +129,7 @@ extension PokedexView: UICollectionViewDataSource, UICollectionViewDelegate {
     }
 }
 
-extension PokedexView: ViewCodeProtocol {
+extension PokedexView: MinimumViewMethodsProtocol {
 
     func additionalSetup() {
         backgroundColor = .white
@@ -161,10 +161,3 @@ extension PokedexView: ViewCodeProtocol {
         ])
     }
 }
-
-
-<form>
-    <br>
-        <input type = "text">
-   <br>
-</form>

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-// TODO: criar teste unitário
+
 class PokedexCoordinator: CoordinatorProtocol, PokemonListCoordinatorProtocol {
     
     var navigationController: UINavigationController
@@ -16,7 +16,7 @@ class PokedexCoordinator: CoordinatorProtocol, PokemonListCoordinatorProtocol {
     }
     
     func start() {
-        let viewModel = PokemonListViewModel(coordinator: self)
+        let viewModel = PokedexViewModel(coordinator: self)
         let pokemonListVC = PokedexViewController(viewModel: viewModel, contentView: PokedexView(viewModel: viewModel))
         navigationController.pushViewController(pokemonListVC, animated: true)
     }

@@ -55,7 +55,7 @@ final class PokemonInfoView: UIView {
     }
 }
 
-extension PokemonInfoView: ViewCodeProtocol {
+extension PokemonInfoView: MinimumViewMethodsProtocol {
 
     func setupHierarchy() {
         containerView.addSubview(titleLabel)

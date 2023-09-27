@@ -69,7 +69,7 @@ final class PokemonCell: UICollectionViewCell {
     }
 }
 
-extension PokemonCell: ViewCodeProtocol {
+extension PokemonCell: MinimumViewMethodsProtocol {
 
     func setupHierarchy() {
         contentView.addSubview(nameLabel)

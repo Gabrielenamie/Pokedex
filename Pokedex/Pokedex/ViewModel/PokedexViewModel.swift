@@ -7,7 +7,7 @@
 
 import UIKit
 // struct x class
-class PokemonListViewModel {
+class PokedexViewModel {
     
     weak var view: PokedexViewProtocol?
     
@@ -42,9 +42,7 @@ class PokemonListViewModel {
     private func showDetail(for detail: PokemonModel) {
         coordinator?.showDetail(for: detail)
     }
-    
-    //TODO: teste unitarios
-
+ 
     private func getPokemonList() {
         view?.showLoading(true)
         
@@ -91,7 +89,7 @@ class PokemonListViewModel {
     }
 }
 
-extension PokemonListViewModel: PokedexViewModelProtocol {
+extension PokedexViewModel: PokedexViewModelProtocol {
 
     var countPokemons: Int {
         return pokemonList.count

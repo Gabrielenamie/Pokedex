@@ -7,8 +7,7 @@
 
 import Foundation
 
-// TODO: better naming
-protocol ViewCodeProtocol {
+protocol MinimumViewMethodsProtocol {
 
     func setupHierarchy()
     func setupConstraints()
@@ -16,7 +15,7 @@ protocol ViewCodeProtocol {
     func buildView()
 }
 
-extension ViewCodeProtocol {
+extension MinimumViewMethodsProtocol {
 
     func buildView() {
         setupHierarchy()
